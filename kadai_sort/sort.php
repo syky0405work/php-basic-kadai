@@ -10,24 +10,29 @@
 
 <body>
   <p>
-    <?php
+<?php
     $nums = [15, 4, 18, 23, 10];
 
-    function sort_2way($array, $order = true)
+    function sort_2way($array, $order)
     {
       if ($order) {
         sort($array);
+        echo "昇順にソートします。<br>";
+        foreach ($array as $value) {
+          echo $value . '<br>';
+        }
       } else {
         rsort($array);
+        echo "降順にソートします。<br>";
+        foreach ($array as $value) {
+          echo $value . '<br>';
+        }
       }
       return $array;
     }
-    echo "昇順でソートします。<br>" . implode('<br>', sort_2way($nums, true));
-    echo '<br>';
-    echo "降順でソートします。<br>" . implode('<br>', sort_2way($nums, false));
+    implode('<br>', sort_2way($nums, true));
+    implode('<br>', sort_2way($nums, false));
     ?>
-
-
   </p>
 
 
