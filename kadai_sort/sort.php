@@ -30,8 +30,8 @@
       }
       return $array;
     }
-    implode('<br>', sort_2way($nums, true));
-    implode('<br>', sort_2way($nums, false));
+    sort_2way($nums, true);
+    sort_2way($nums, false);
     ?>
   </p>
 
