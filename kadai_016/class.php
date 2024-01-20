@@ -8,19 +8,17 @@
 </head>
 
 <body>
-  <p>
+<p>
     <?php
     class Food
     {
       private $name;
       private $price;
 
-      public function set_price(int $price)
+
+      public function show_price(int $price)
       {
         $this->price = $price;
-      }
-      public function show_price()
-      {
         echo $this->price . '<br>';
       }
 
@@ -41,12 +39,9 @@
       private $height;
       private $weight;
 
-      public function set_height(int $height)
+      public function show_height(int $height)
       {
         $this->height = $height;
-      }
-      public function show_height()
-      {
         echo $this->height . '<br>';
       }
 
@@ -63,14 +58,11 @@
     echo '<br>';
 
     // メソッドへのアクセス、実行
-    $food->set_price(500);
-    $food->show_price();
-    $animal->set_height(100);
-    $animal->show_height();
+    $food->show_price(500);
+    $animal->show_height(100);
 
     ?>
   </p>
-
 
 </body>
 
