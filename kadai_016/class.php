@@ -58,8 +58,8 @@
     echo '<br>';
 
     // メソッドへのアクセス、実行
-    $food->show_price(500);
-    $animal->show_height(100);
+    $food->show_price(300);
+    $animal->show_height(80);
 
     ?>
   </p>
